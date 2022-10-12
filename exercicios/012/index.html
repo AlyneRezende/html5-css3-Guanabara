@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Videos</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+
+    <video src="videos/meu-video.mp4" width="560" height="315" controls></video>
+
+    <p>Sempre importante colocar diversos tipos de arquivos de video, pois nao sabemos qual navegador nosso cliente vai acessar o site. Alguns navegadores nao suportam alguns arquivos especificos. Fique atento!</p>
+
+    <video width="560" poster="imagens/minha-capa.png" controls>
+        <source src="videos/meu-video.m4v" type="video/mp4">
+        <source src="videos/meu-video.webm" type="video/webm">
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador nao tem compatibilidade de video.</p>
+    </video>
+
+    <p>NOTA: colocamos o atributo POSTER para que o video pare na imagem criada e nao em um frame especifico do video, o que muita das vezes pode ficar feio</p>
+    <p>NOTA: A sequencia importa, sempre de cima para baixo</p>
+    <p>NOTA: videos hospedados no proprio site vao gerar muito consumo de dados, o que implica no bolso do meu cliente.</p>
+
+    <h1>Inserindo videos do YouTube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XBrrNTmOVnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>NOTA: recomenda-se que o cliente tenha um canal no youtube para subir o video (M4V). Mas cuidado com direitos autorais, sempre tentar criar video proprio. Desvantagem, o youtube pode sugerir outros videos ao final do video; esta sujeito a pirataria tambem pois o video fica publico </p>
+
+    <h1>Inserindo videos do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/191894507?h=e15bf4bcf0&title=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/191894507">Animation Reel</a> from <a href="https://vimeo.com/shaoyuhsu">Shao YU Hsu</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <p>Nota: podemos excluir o paragrafo abaixo do video, nao influencia em nada. </p>
+
+    <p>NOTA: Vantagem qualidade do video, voce consegue deixar privado o video, desvantagem do algoritmo (CODEC nao é tao boa, pode dar umas travadinhas). Banda de transferencia ilimitada.  </p>
+</body>
+</html>

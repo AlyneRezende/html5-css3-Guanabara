@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midias/happy-mistake.mp3" controls autoplay></audio>
+    <p>NOTA: alguns navegadores nao tocam automanticamente somente com o autoplay, entao precisamos inserir outros tipos de arquivos de audio como o MP3, WAV e OGG </p>
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir o audio. <a href="midias/guanacast-33.mp3">Clique aqui para baixar!</a> </p> 
+    </audio>
+    <p>ATENÇÃO com o uso do atributo PRELOAD no AUTO, pois o site só ira carregar depois que carregar todo o audio. O que vai demorar bastante pra carregar a pagina dependendo do tamanho do audio</p>
+    <p>NOTA: O audio será reproduzido de cima para baixo, primeiro vai tentar reproduzir o MP3, se nao OGG, se nao WAV, e caso nao rode nenhum irá aparecer a mensagem do INFELIZMENTE E bla bla bla</p>
+</body>
+</html>

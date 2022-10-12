@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Ordered Lists</h2>
+    <ol type="1"> <!-- ADICIONAR COMENTÁRIO -->
+        <li>Acordar</li>
+        <li>Fazer Exercício Físico</li>
+        <li>Tomar café da manhã</li>
+        <li>Escovar os dentes</li>
+        <li>Trabalhar</li>
+        <li>Estudar</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Dica: a partir do HTML5 não é necessário fechar &lt;/li&gt;</p>
+    <p>Para mudar o tipo de marcador, você precisa incluir dentro da tag ol o parametro TYPE e escolher dentre as opções "1,A,a,I,i". Caso precise que a contagem se inicie de uma sequencia especifica basta colocar depois do type o parametro START</p>    
+    <h2>Unordered List</h2>
+    <ul type="square"> <!-- Square, disc or circle-->
+        <li>pao</li>    
+        <li>leite</li>
+        <li>chocolate</li>
+        <li>arroz</li>
+        <li>morangos</li>
+        <li>kiwi</li>
+    </ul>
+    <p>Para mudar o marcador inserimos a propriedade TYPE dentro da tag UL e ESCREVEMOS square, circle, ou disc</p>
+    <p>DICA: Para adicionar um comentário inserimos < ! - -  que completará automaticamente e ficara verde, o que indica um comments, eu acho lol</p>
+    <h2>Mesclando Listas</h2>
+    <p>Listas de comidas favoritas</p>
+    <ol>
+        <li>Salgadas</li>
+        <ol type="a">
+            <li>Sanduíche</li>
+            <li>Lasanha</li>
+            <li>Pizza</li>
+        </ol>
+        <li>Doces</li>
+        <ol type="a" start="4">
+            <li>Brigadeiro</li>
+            <li>Doce de Leite Ninho</li>
+            <li>tortas</li>
+        </ol>
+    </ol>
+    <p>Itinerário para viagem</p>
+    <ol type="i">
+        <li>Possíveis países</li>
+        <ul type="circle">
+            <li>Portugal</li>
+            <ul>
+                <li>Lisboa</li>
+                <li>Porto</li>
+            </ul>
+            <li>Espanha</li>
+            <ul>
+                <li>Madri</li>
+                <li>Outra cidade de Madri</li>
+            </ul>
+            <li>Nova Zelândia</li>
+        </ul>
+        <li>Meio de Locomoção</li>
+        <ul>
+            <li>trem</li>
+            <li>aviao</li>
+            <li>onibus</li>
+        </ul>
+        <li>Passeios</li>
+        <ul>
+            <li>com guia turistico</li>
+            <li>sem guia turistico</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definição</h2>
+    <dl>
+        <dt>Definition Term usa-se a tag dt</dt>
+        <dd>Definition description usa-se a tag dd</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcacao para criacao do conteudo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcacao para criacao do design</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programacao para criacao de interacoes entre sites</dd>
+
+    </dl>
+</body>
+</html>

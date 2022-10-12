@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: rgb(15, 220, 220);
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 300px;
+            max-width: 800px;
+            margin: auto;
+
+            /*margin no auto significa que o conteudo fica 'centralizado', ou seja, com margens automaticas de acordo com o tamanho da tela
+            
+            min e max-width ajuda a delimitar o tamanho do seu conteúdo (imagem não é configurada aqui, e sim no img width)
+            
+            img width a 100% ajuda a imagem a ficar no tamanho ta tela*/
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At exercitationem dicta quis sit! Architecto harum quas, velit voluptates, voluptatibus eaque nostrum quasi molestiae quaerat repellendus sequi enim, praesentium laudantium provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptates ipsam magnam quis sint similique officia suscipit quisquam ex labore tenetur, alias deleniti dolorum aperiam tempore voluptatibus dolores iusto ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit labore voluptatibus amet voluptatem vel molestias alias quidem, necessitatibus beatae, at delectus! Eveniet minus earum veritatis excepturi totam? Iusto, sunt!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, totam? Cum provident labore tempora. A dolore enim vero! Architecto commodi, sed molestiae consectetur qui accusantium velit nam saepe debitis quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, veritatis magni asperiores natus iusto in quia. Ab dolore possimus voluptates odio, iusto sunt repellendus impedit inventore tempora exercitationem alias itaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci blanditiis quas voluptatum deserunt unde dolorem libero nemo omnis maxime! Ipsam amet nihil, sapiente optio consectetur ex enim inventore similique mollitia!</p>
+    </main>
+</body>
+</html>

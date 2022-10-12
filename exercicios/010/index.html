@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>voce pode acessar meu <a href="https://www.youtube.com/" target="_blank" rel="external">site X</a></p>
+    <p>voce tambem pode acessar <a target="_blank" rel="external" href="https://outlook.live.com/mail/0/">meu email</a></p>
+    <p>Obs.: caso voce queira inserir um link externo que nao seja seu, eh recomendado que use os atributos TARGET=''_BLANK'' e REL=''EXTERNAL'' dentro da tag, obviamente. Assim o link sera aberto em uma nova janela.</p>
+
+    <h1 >Usando Links Internos</h1>
+    <p>Esta e a primeira pagina do site. Se vc quiser, pode acessar tambem a minha <a href="pag002.html" rel="next">Segunda pagina aqui</a> </p>
+    <p>DICA: vc pode utilizar o atalho CTRL+ESPACO para selecionar a pasta que quer, sera pasta se vc tiver dentro do atributo HREF</p>
+    <p>DICA: ao utilizar o atributo REL nao mudara muita coisa visualmente, vc so estara dizendo ao navegador o que e o que.. e nao deixar pra ele decidir.</p>
+    <p>Voce pode também acessar nossa <a href="noticias/pag003.html" target="_self" rel="next">pagina de noticias</a></p>
+    <p>DICA: se vc quer que seus links sejam abertos na mesma página, voce utiliza _SELF dentro do atributo TARGET</p>
+
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte" type="application/pdf" >Baixar o doc em pdf</a></li>
+        <li><a href="livro/AnkiApp-Windows.zip" download="AnkiApp-Windows" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+    <p>DICA: dependendo do seu navegador, podemos inserir o atributo DOWNLOAD e colocar o NOME DO ARQUIVO, e também o atributo TYPE onde devemos colocar o comando correto. E para saber qual é o comando correto, voce deve entrar nesse <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="next">site do iana</a>.</p>
+
+</body>
+</html>

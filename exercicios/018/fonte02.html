@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Love";
+            src: url("fontes/Filxgirl.TTF") format("truetype"), url("fontes/love\ larry\ ttf.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*OBS.: dentro do URL o nome do arquivo deve ser exatamente igual e deve estar entre aspas.
+        Tipos de format (varia entre os navegadores, sempre bom testar em todos, se nao souber):
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advanced typography)
+        - svg */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family:'Love', Times, serif ;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab alias iusto quam blanditiis fugit, doloremque voluptates inventore? Libero, corporis culpa officia dolor sapiente laboriosam, saepe fugiat natus alias ipsum ipsam?</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas, quos ex officiis animi doloremque est nam a sit pariatur quasi nostrum eum officia excepturi vel sequi aperiam soluta natus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, laudantium fugiat! Aspernatur, omnis. Ducimus voluptatum optio nobis, cupiditate illum inventore! Ea rerum inventore assumenda officiis fugiat quam iusto perspiciatis obcaecati?</p>
+</body>
+</html>
